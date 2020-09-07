@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Generador de Caracteres</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body style="font:roboto-bold;">
+
+      <h1>GENERADOR DE CARACTERES</h1>
+      <div class="md-form">
+          <input type="text" name="caracter" id="caracter" placeholder="Ingrese el caracter a generar" maxlength="1">
+          <input type="number" name="cantidad" id="cantidad" placeholder="Ingrese la cantidad a generar" min="0">
+          <textarea name="resultado" id="resultado" rows="100" cols="5"></textarea>
+          <input type="button" name="name" value="Generar!" onclick="generarScript()">
+          <input type="button" name="name" value="Copiar todo" onclick="copiarScript()">
+      </div>
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <script type="text/javascript">
+      function generarScript() {
+        document.getElementById('resultado').value = '';
+        var caracter1 = document.getElementById('caracter').value;
+        var cantidad = document.getElementById('cantidad').value;
+        for (var i = 0; i < cantidad; i++) {
+          document.getElementById('resultado').value = document.getElementById('resultado').value+caracter1;
+
+        }
+      }
+
+    </script>
+
+    <script type="text/javascript">
+          function copiarScript(){
+          document.getElementById('resultado').select();
+          document.execCommand("copy")
+      }
+
+    </script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+</body>
+
+</html>

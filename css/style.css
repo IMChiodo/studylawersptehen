@@ -1,0 +1,212 @@
+/* TEMPLATE STYLES */
+
+
+/* Necessary for full page carousel*/
+@import 'https://fonts.googleapis.com/css?family=Rokkitt';
+
+html,
+body,
+.view {
+    height: 100%;
+	font-family: 'Calibri';
+}
+
+.customImageCarrousel{
+    margin-left:-12%!important;
+}
+
+#nosotros{
+	padding-top:5rem;
+}
+#persona{
+	text-align:center;
+}
+#especialidadesimagen{
+	text-align:center;
+}
+.titulo{
+	padding-top:1rem;
+	padding-bottom:1rem;
+	text-align:center;
+}
+#especialidades{
+	padding-top:5rem;
+	margin-top:5rem;
+	margin-bottom:6rem;
+}
+#trabajo{
+	padding-top:5rem;
+	margin-top:5rem;
+}
+#contacto{
+	padding-top:5rem;
+	margin-top:5rem;
+}
+
+#formulariocontacto, #formulariotrabajo{
+	padding-top:2.5rem;
+	padding-bottom:1.5rem;
+}
+
+#formulariocontacto .active, #formulariotrabajo .active{
+	height:auto;
+}
+/* Navigation*/
+#sobrenosotrosimagen{
+	margin-left:1.5rem;
+}
+
+
+.navbar {
+    background-color: transparent;
+}
+
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: #1C2331;
+}
+
+footer.page-footer {
+    background-color: #1C2331;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1C2331;
+    }
+}
+
+@media (max-width: 420px){
+	#sobrenosotrosimagen{
+	margin-left:1rem;
+}
+}
+
+
+/* Carousel*/
+
+.carousel,
+.carousel-item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url("../img/slide3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url("../img/slide3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url("../img/slide3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cursiva{
+	font-family: 'Rokkitt';
+	font-size:1.3rem;
+}
+.estudio{
+	font-size:4rem;
+}
+
+
+/*Caption*/
+
+.flex-center {
+    color: #fff;
+}
+
+@media (max-width: 450px) {
+	
+	.carousel-item:nth-child(1) {
+    background-image: url("../img/slide2mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url("../img/slide2mobile.png");
+    background-repeat: no-repeat;
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url("../img/slide2mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+	
+}
+
+
+@media (min-width: 776px) {
+#especialidades{
+	padding-top:5rem;
+	margin-top:20rem;
+	margin-bottom:6rem;
+}
+#trabajo{
+	padding-top:7rem;
+	margin-top:5rem;
+}
+#contacto{
+	padding-top:5rem;
+	margin-top:20rem;
+	margin-bottom:7rem;
+}
+#sobrenosotrosimagen{
+	margin-left:2.2rem;
+}	
+}
+
+
+
+@media (min-width: 776px) {
+    .carousel .view ul li {
+        display: inline;
+    }
+    .carousel .view .full-bg-img ul li .flex-item {
+        margin-bottom: 1.5rem;
+    }
+}
+
+		/* Scrollbar */
+
+		::-webkit-scrollbar {
+			width: 8px;
+		}
+		/* Track */
+
+		::-webkit-scrollbar-track {
+			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+		}
+		/* Handle */
+
+		::-webkit-scrollbar-thumb {
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			background: #3E4551;
+			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+		}
+
+		::-webkit-scrollbar-thumb:window-inactive {
+		   background: #3E4551;
+		}
